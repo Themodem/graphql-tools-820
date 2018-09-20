@@ -1,0 +1,29 @@
+{
+  "name": "graphql-tools-820",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Themodem/graphql-tools-820.git",
+  "author": "Lee Fenlan <lee@fenlan.uk>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/isomorphic-fetch": "0.0.34",
+    "@types/koa": "2.0.39",
+    "concurrently": "^4.0.1",
+    "ts-node": "3.3.0",
+    "typescript": "2.5.2"
+  },
+  "dependencies": {
+    "@types/koa-router": "^7.0.32",
+    "apollo-link-http": "1.5.5",
+    "apollo-server": "2.1.0",
+    "apollo-server-koa": "2.0.0-rc.12",
+    "graphql": "14.0.2",
+    "graphql-tools": "4.0.0",
+    "isomorphic-fetch": "2.2.1",
+    "koa": "2.3.0",
+    "koa-router": "^7.4.0"
+  },
+  "scripts": {
+    "start": "concurrently \"ts-node src/server1.ts\" \"ts-node src/server2.ts\" \"ts-node src/server.ts\""
+  }
+}
